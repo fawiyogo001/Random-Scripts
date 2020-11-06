@@ -13,3 +13,15 @@ for i in range(0, n):
 	Fib.append(y)
 
 print(Fib)
+
+# with recursion
+def fibonacci(n):
+	if n <= 1:
+		return n
+	else:
+		return(fibonacci(n - 1) + fibonacci(n - 2))
+
+if n <= 0:
+	print('n is not positive, please enter a positive integer')
+else:
+	print([fibonacci(i) for i in range(n)])
